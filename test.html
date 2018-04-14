@@ -1,0 +1,62 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-animate-css-rotate-scale.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#box").animate({height: "300px"},3000);
+    });
+    
+	$("#btn2").click(function(){
+        $("#rectangle").animate({scale: 2.25},1000);
+    });
+	
+	$("#btn3").click(function(){
+        $("#box").animate({height: "100px"},1000);
+    });
+	
+		$("#btn4").click(function(){
+        $("#rectangle").animate({scale: 1.0},1000);
+    });
+	
+});
+</script>
+</head>
+<body>
+<style type="text/css">
+.fullcontainer {width:800px;height:500px;background-color:#FFCECE;position:relative;}
+</style>
+<div class="buttons">
+<button id="btn1">Animate A</button>
+<button id="btn2">Animate B</button>
+<button id="btn3">Reset A</button>
+<button id="btn4">Reset B</button>
+</div>
+
+<div class="fullcontainer">
+
+	<div style="background:#c0c0c0;margin:0px;position:absolute;bottom:0px;">
+		<div>
+			<IMG SRC="square.png" id="box">
+		</div>
+	</div>
+
+	<div style="background:#FF0000;margin:0px;position:absolute;left:112px;bottom:0px;">
+		<div>
+			&nbsp; &nbsp; &nbsp; &nbsp; 
+		</div>
+	</div>
+	
+	
+	<div style="background:#FAFAFA;margin:0px;position:absolute;left:224px;bottom:0px;">
+		<div>
+			<IMG SRC="rectangle.png" id="rectangle">
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
